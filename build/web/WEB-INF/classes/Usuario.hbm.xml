@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 23/04/2020 10:57:13 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class catalog="sitio" name="bean.Usuario" optimistic-lock="version" table="usuario">
+    <id name="usuario" type="string">
+      <column length="50" name="usuario"/>
+      <generator class="assigned"/>
+    </id>
+    <property name="clave" type="string">
+      <column length="50" name="clave" not-null="true"/>
+    </property>
+    <property name="nombre" type="string">
+      <column length="50" name="nombre" not-null="true"/>
+    </property>
+    <property name="direccion" type="string">
+      <column length="50" name="direccion" not-null="true"/>
+    </property>
+    <property name="telefono" type="string">
+      <column length="20" name="telefono" not-null="true"/>
+    </property>
+    <property name="correo" type="string">
+      <column length="50" name="correo" not-null="true"/>
+    </property>
+  </class>
+</hibernate-mapping>
